@@ -4,8 +4,6 @@
 
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,21 +13,23 @@
   <title>Ashar Alo Shool</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="back">
+<body>
   
-    <img src="./img/cover.jpg" alt="Cover" width="800">
-    <div class="login">
-      <h1 class="heading">Admin Login</h1>
-      <div class="log">
-          <form action="" method="POST">
-            <label>Username</label>
-            <input type="text" name="a_name" required class="input"> <br>
-            <label>Password</label>
-            <input type="password" name="a_password" required class="input"> <br>
-            <button type="submit" class="btn" name="login">Login</button>
-          </form>
-      </div>
+    <div class="home-bannerImg">
+        <img src="./img/cover1.jpg" alt="Home-Cover">
     </div>
+
+   <div id="section">
+        <div id="content">
+            <h3>Welcome to Admin Home Page</h3> <br>
+            <h3>School Information</h3><br>
+           
+             <img src="./img/student.jpg" alt="student" width="200px" class="student-pic">
+             <p>Ashar Alo is a school where poor students study free. It's management system is designed to automate this school's diverse operation from classes, exams to schools event. It's a powerful system for manage students, their classes, subjects, teachers and many more like exams,routine.</p>
+           
+
+        </div>
+   </div>
     <div class="footer">
       <footer>&copy; All Rights Reserver By Ahatasam Siam</footer>
     </div>
