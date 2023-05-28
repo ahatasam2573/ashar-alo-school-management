@@ -20,15 +20,21 @@
     </div>
 
    <div id="section">
+        <div class="main-desc">
+            <?php
+                include "sidebar.php"
+            ?>
+        </div>
         <div id="content">
             <h3>Welcome to Admin Home Page</h3> <br>
             <h3>School Information</h3><br>
-           
-             <img src="./img/student.jpg" alt="student" width="200px" class="student-pic">
-             <p>Ashar Alo is a school where poor students study free. It's management system is designed to automate this school's diverse operation from classes, exams to schools event. It's a powerful system for manage students, their classes, subjects, teachers and many more like exams,routine.</p>
-           
-
+           <hr>
+            <div class="pic-desc">
+                <img src="./img/student.jpg" alt="student" width="200px" class="student-pic">
+                <p class="desc">Ashar Alo is a school where poor students study free. It's management system is designed to automate this school's diverse operation from classes, exams to schools event. It's a powerful system for manage students, their classes, subjects, teachers and many more like exams,routine.</p>
+            </div>            
         </div>
+       
    </div>
     <div class="footer">
       <footer>&copy; All Rights Reserver By Ahatasam Siam</footer>
