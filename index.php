@@ -15,13 +15,15 @@
       <div class="log">
           <form action="" method="POST">
             <label>Username</label>
-            <input type="text" name="name" required class="input"> <br>
+            <input type="text" name="aname" required class="input"> <br>
             <label>Password</label>
-            <input type="password" name="password" required class="input"> <br>
+            <input type="password" name="apassword" required class="input"> <br>
             <button type="submit" class="btn" name="login">Login</button>
           </form>
       </div>
     </div>
-  
+    <div class="footer">
+      <footer>&copy; All Rights Reserver By Ahatasam Siam</footer>
+    </div>
 </body>
 </html>

@@ -11,7 +11,7 @@ html{
 }
 .back{
     background: white;
-    height: 800px;
+    height: 1000px;
     width: 800px;
     margin: 0 auto;
     margin-top: 5px;
@@ -20,13 +20,59 @@ html{
 
 .log{
     height: auto;
-    width: 50px;
+    width: 50%;
     margin: 0 auto;
     margin-top: 20px;
     padding: 30px;
     margin-bottom: 40px;
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    -moz-box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    /* box-shadow: 0 8px 0 rgba(0,0,0,0.2), 0 6px 0 rgba(0,0,0,0.19); */
 }
 .heading{
     text-align: center;
     margin-top: 40px ;
+}
+.input{
+   height: 30px; 
+   width: 90%;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.btn{
+    border-radius: 5px;
+    padding: 10px 30px;
+    background: #666;
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10px;
+    outline: none;
+    cursor: pointer;
+}
+label{
+    margin-top: 10px;
+}
+h1,h2,h3,h4,h5,label{
+    color: rgb(29, 0, 56);
+    font-weight: 700;
+}
+
+.footer{
+    background: #04293a;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    text-align: center;
+    color: rgb(255, 254, 252);
+    line-height: 50%;
 }
