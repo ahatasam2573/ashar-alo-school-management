@@ -15,7 +15,9 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  
+  <?php
+      include "navbar.php";  //adding nav bar
+    ?>
     <div class="home-bannerImg">
         <img src="./img/cover1.jpg" alt="Home-Cover">
     </div>

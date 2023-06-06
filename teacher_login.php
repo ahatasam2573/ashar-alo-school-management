@@ -20,31 +20,29 @@
     ?>
     <img src="./img/cover.jpg" alt="Cover" width="800">
     <div class="login">
-      <h1 class="heading">Admin Login</h1>
+      <h1 class="heading">Teacher Login</h1>
       <div class="log">
-      <!-- //login admin user -->
+      <!-- //login teacher -->
       <?php
         if(isset($_POST["login"])){
-          $sql = "SELECT * from admin where A_Name='{$_POST["a_name"]}' and A_Password ='{$_POST["a_password"]}'";
+          $sql = "SELECT * from staff where TNAME='{$_POST["t_name"]}' and TPASS ='{$_POST["t_password"]}'";
           $res = $db -> query($sql);
           if($res -> num_rows>0){
             $ro = $res -> fetch_assoc();
-            $_SESSION["A_ID"] = $ro["A_ID"];  //storing admin id in session and matching it with $ro
-            $_SESSION["A_Name"] = $ro["A_Name"];
+            $_SESSION["TID"] = $ro["TID"];  //storing admin id in session and matching it with $ro
+            $_SESSION["TNAME"] = $ro["TNAME"];
 
-            echo "<script>window.open('admin_home.php','_self');</script>";
+            echo "<script>window.open('teacher_home.php','_self');</script>";
           }else{
             echo "<div class='error'>Invalid Username and Password</div>";
           }
         }
       ?>
-
-
           <form action="" method="POST">
             <label>Username</label>
-            <input type="text" name="a_name" required class="input"> <br>
+            <input type="text" name="t_name" required class="input"> <br>
             <label>Password</label>
-            <input type="password" name="a_password" required class="input"> <br>
+            <input type="password" name="t_password" required class="input"> <br>
             <button type="submit" class="btn" name="login">Login</button>
           </form>
       </div>
