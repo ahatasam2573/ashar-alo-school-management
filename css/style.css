@@ -172,9 +172,15 @@ h1,h2,h3,h4,h5,label{
 
 /* add class */
 .input2{
-    width: 40%;
+    width: 69%;
     height: 40px;
     margin-top: 20px;
+    display: block;
+}
+.input2 select{
+    display: block;
+    width: 50px;
+    padding: 10px;
 }
 .t-box{
     float: left;
@@ -188,7 +194,18 @@ tr, td, th{
 .table{
     border-collapse: collapse;
 }
-
+.btnr{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #1FAE10;
+    color: white;
+}
+.btnr:hover{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #666;
+    color: white;
+}
 /* footer started */
 .footer{
     background: #04293a;

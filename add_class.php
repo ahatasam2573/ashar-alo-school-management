@@ -84,6 +84,24 @@
                     <th>Section</th>
                     <th>Delete</th>
                 </tr>
+                <?php
+                    $s = "SELECT * from class";
+                    $res = $db -> query($s);
+
+                    if($res -> num_rows>0){
+                        $i = 0;
+                        while($r = $res-> fetch_assoc()){
+                            $i++; //it shows the list number on the ui
+                            echo "<tr>
+                                <td>{$i}</td>
+                                <td>{$r["CNAME"]}</td>
+                                <td>{$r["CSEC"]}</td>
+                                <td><a href='delete.php?id={$r["CID"]}' class='btnr'>Delete</a></td>
+                                
+                            </tr>";
+                        };
+                    };
+                ?>
             </table>
         </div>
        
