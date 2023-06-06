@@ -9,6 +9,10 @@
 html{
     background: #dddd;
 }
+a{
+    list-style: none;
+}
+/* index.php */
 .back{
     background: white;
     height: 1000px;
@@ -62,6 +66,15 @@ h1,h2,h3,h4,h5,label{
     color: rgb(29, 0, 56);
     font-weight: 700;
 }
+.error{
+    color: red;
+    background-color: #001613;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
 /* home page */
 .home-bannerImg{
     width: 1200px;  
@@ -123,9 +136,16 @@ h1,h2,h3,h4,h5,label{
     margin-left: 30px;
     background: white;
 }
+.li{
+    position:  relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    background-color: white;
+    border: 1px solid #666;
+}
 
-
-
+/* footer started */
 .footer{
     background: #04293a;
     height: 60px;
@@ -133,6 +153,7 @@ h1,h2,h3,h4,h5,label{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black;
 }
 .footer{
     text-align: center;

@@ -16,6 +16,13 @@
                     <li class="li"><a href="/student.php">View Student</a></li>
                     <li class="li"><a href="/logout.php">Logout</a></li>       
                 ';
+            }else{
+                echo '
+                
+                <li class="li"><a href=""></a></li>
+                <li class="li"><a href=""></a></li>
+                <li class="li"><a href=""></a></li>     
+            ';
             };
         ?>
 

@@ -1,6 +1,7 @@
 <?php
 
   include "database.php";
+  session_start();
 
 ?>
 
@@ -26,7 +27,7 @@
             ?>
         </div>
         <div id="content">
-            <h3>Welcome to Admin Home Page</h3> <br>
+            <h3>Welcome <?php echo $_SESSION["A_Name"]; ?></h3> <br> 
             <h3>School Information</h3><br>
            <hr>
             <div class="pic-desc">
@@ -37,7 +38,7 @@
        
    </div>
     <div class="footer">
-      <footer>&copy; All Rights Reserver By Ahatasam Siam</footer>
+      <footer>&copy; All Rights Reserved By Ahatasam Siam</footer>
     </div>
 </body>
 </html>
