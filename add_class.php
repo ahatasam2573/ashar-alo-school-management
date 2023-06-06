@@ -77,6 +77,12 @@
         </div>
         <div class="tbox">
             <h3>Class Details</h3>
+            <?php
+                //GETTING DELETED MESSAGE
+                if(isset($_GET["mess"])){
+                    echo "<div class='error'>{$_GET["mess"]}</div>";
+                };
+            ?>
             <table border="1px">
                 <tr>
                     <th>S.No</th>
